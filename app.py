@@ -9,7 +9,12 @@ from api import convert_text
 
 app = Flask(__name__)
 
-yo_client = yo.Yo('')
+yo_client = yo.Yo('asdasdas')
+
+
+@app.route("/", methods=['GET'])
+def hello():
+    return str('ngHello ngWorld')
 
 
 @app.route("/sms", methods=['POST'])
