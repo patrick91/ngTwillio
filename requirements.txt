@@ -3,6 +3,10 @@ Jinja2==2.7.3
 MarkupSafe==0.23
 Werkzeug==0.9.6
 argparse==1.2.1
+httplib2==0.9
 itsdangerous==0.24
 python-yo==0.1.0
+requests==2.4.1
+six==1.8.0
+twilio==3.6.7
 wsgiref==0.1.2

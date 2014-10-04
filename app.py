@@ -4,7 +4,7 @@ from flask import Flask, request
 
 import yo
 
-from .api import convert_text
+from api import convert_text
 
 
 app = Flask(__name__)
