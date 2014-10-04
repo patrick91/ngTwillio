@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+
 import twilio.twiml
 
 from flask import Flask, request
@@ -19,7 +21,7 @@ def hello():
 
 @app.route("/sms", methods=['POST'])
 def hello_ng():
-    body = request.form.get('Body', 'no body')
+    body = request.form.get('Body', 'no body').encode('utf-8').decode('utf-8', 'ignore')
 
     resp = twilio.twiml.Response()
     resp.message(convert_text(body))

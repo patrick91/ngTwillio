@@ -1,3 +1,6 @@
+from __future__ import unicode_literals
+
+
 def convert_text(text):
     out = ''
 
